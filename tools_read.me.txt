@@ -1,0 +1,31 @@
+Tools Read Me
+
+Just a small collection of scripts I've writen in batch and python with examlple configuration files where necessary.
+
+Alias.bat
+
+A simple solution to adding aliases for common and complex commands. See help (-h) for more information.
+
+Backup.py
+
+Backup script to backup importan folders to a named drive (backup.cfg).  To add a folder to backup.cfg either edit backup.cfg in notepad or navigate to within the desired folder and user the command "backup.py add" and the current folder will be added automatically.
+
+bmd.bat
+
+Bulk mkdir.  Partly a proof of concept, ie: it is possable to create a scripting language in batch lang, and partly a way of quickly creating complex and simple directory trees. See Help (-h) for more information.
+
+deploy.bat
+
+Script to copy finished scripts to a folder on the path. See help  (-h) for more informataion.
+
+godir.bat
+
+Quickly navigate between commonly used folders on the command line, see help for more infomaion (-h).
+
+scrs.bat
+
+Quickly turn screensave on or off form cmd line.  See help for more informaion (-h)
+
+tidy.py
+
+script to take the pain of sorting my download folder out and filing stuff away.  All done automatically.  No help as yet, still in alpha stage.
