@@ -29,3 +29,7 @@ Quickly turn screensave on or off form cmd line.  See help for more informaion (
 tidy.py
 
 script to take the pain of sorting my download folder out and filing stuff away.  All done automatically.  No help as yet, still in alpha stage.
+
+test.bmd
+
+A simple script for BMD.BAT as an example.
