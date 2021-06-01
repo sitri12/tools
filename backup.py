@@ -88,6 +88,47 @@ def add():
     file.close()
     print(here+" has been added of config file")
     
+def help():
+    print(" backup.py     (Ver 1.00a)     (c) Paul Mann 2021                    Man Page")
+    print(" =================================================================================")
+    print(" ")
+    print(" Synopsis")
+    print(" ========")
+    print(" ")
+    print("     backup directories to named drive")
+    print(" ")
+    print(" Usage")
+    print(" =====")
+    print(" ")
+    print("     backup.py [-h]")
+    print(" ")
+    print(" Arguments")
+    print(" =========")
+    print(" ")
+    print("     -h      :       show help - this page")
+    print("     add     :       Adds the current working directory to backup.cfg") 
+    print(" ")
+    print(" Notes")
+    print(" =====")
+    print(" ")
+    print("     All necessary information is held in backup.cfg and it is split into two")
+    print("     sections: [Head} and {Body]")
+    print(" ")
+    print("         * [Head] holds the following information")
+    print(" ")
+    print("                 DL  :   (Expected) Drive Letter")
+    print("                 DN  :   Drive Name")
+    print("                 DD  :   Destination Drive")
+    print(" ")
+    print("             Feel free to change these to suit your own setup")
+    print(" ")
+    print("         * [Body] Contains the full paths to the folders you wish to backup")
+    print("             and is formated thus:")
+    print(" ")
+    print("                 +:<full path to dir>")
+    print(" ")
+    print(" ")
+
 
 
 def main():
@@ -126,6 +167,8 @@ if(len(sys.argv)==1):
     main()
 elif(sys.argv[1]=="add"):
     add()
+elif(sys.argv[1]=="-h"):
+    help()
 
 
 te=time.perf_counter()
