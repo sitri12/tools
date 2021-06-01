@@ -8,7 +8,7 @@ A simple solution to adding aliases for common and complex commands. See help (-
 
 Backup.py
 
-Backup script to backup importan folders to a named drive (backup.cfg).  To add a folder to backup.cfg either edit backup.cfg in notepad or navigate to within the desired folder and user the command "backup.py add" and the current folder will be added automatically.
+Backup script to backup importan folders to a named drive (backup.cfg).  To add a folder to backup.cfg either edit backup.cfg in notepad or navigate to within the desired folder and user the command "backup.py add" and the current folder will be added automatically.   See help for more informaion (-h)
 
 bmd.bat
 
@@ -28,8 +28,12 @@ Quickly turn screensave on or off form cmd line.  See help for more informaion (
 
 tidy.py
 
-script to take the pain of sorting my download folder out and filing stuff away.  All done automatically.  No help as yet, still in alpha stage.
+script to take the pain of sorting my download folder out and filing stuff away.  All done automatically. See Help for more information (-h)
 
 test.bmd
 
 A simple script for BMD.BAT as an example.
+
+txt2hlp
+
+Creates a help function from a text file for either bactch or python - I'm lazy and a load of print() or echo statements can be done automatically instead of me doing it manually.
