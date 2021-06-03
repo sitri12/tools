@@ -26,6 +26,14 @@ def create_head(lang):
     
     return(head)
 
+def create_tail(lang):
+    
+    if(lang=="bat"):
+        pass
+    if(lang=="py"):
+        out="\n\nhelp()"
+    return(out)
+
 def create_line(line, lang):
 
     if(lang=="bat"):
@@ -40,8 +48,8 @@ def create_line(line, lang):
     
     return(out)
 
-def help():    
-    print(" TXT2HLP.PY   (ver 1.0 :            (c) Paul Mann 2021)              MAN PAGE")
+def help():
+    print(" TXT2HLP.PY   (ver 1.01a)               (c) Paul Mann 2021              MAN PAGE")
     print(" ===================================================================================")
     print(" ")
     print(" Synopsis")
@@ -65,9 +73,24 @@ def help():
     print(" Notes")
     print(" =====")
     print(" ")
-    print("     If creating a BATCH function you may need to edit any escaped characters by\n hand")
+    print("     If creating a BATCH function you may need to edit any escaped characters by hand")
+    print(" ")
+    print(" ChangeLog")
+    print(" =========")
+    print(" ")
+    print("     20210603")
+    print("     --------")
+    print(" ")
+    print("     Couple of Minor tweeks.")
+    print(" ")
+    print("         1.  Adds a function call at the end of the file if python is selected.")
+    print(" ")
+    print("         2.  Output file is now named .bat or .py depending upon selection.")
+    print(" ")
+    print(" ")
 
 
+help()
 def main():
 
     lang=get_lang(sys.argv[1])
@@ -82,17 +105,24 @@ def main():
         out.append(line)
         
     inf.close()
+
+    
     
     ofile=get_base_name(sys.argv[2])
     
-    f=open(ofile+".txt", "a")
+    f=open(ofile+"."+lang, "a")
 
     for i in range(len(out)):
         f.write(out[i])
     
+    
+    f.write(create_tail(lang))
     f.close()
+    
+
 if(len(sys.argv) >3):
     help()
+    print(len(sys.argv))
 elif(sys.argv[1].lower()=="-h"):    
     help()
 else:
