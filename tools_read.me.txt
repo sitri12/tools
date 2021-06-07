@@ -37,3 +37,7 @@ A simple script for BMD.BAT as an example.
 txt2hlp
 
 Creates a help function from a text file for either bactch or python - I'm lazy and a load of print() or echo statements can be done automatically instead of me doing it manually.
+
+Mann.py
+
+My own interpretation of the man command.
